@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simon Says</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="simon.css">
+</head>
+<body>
+
+  <div class="game-page">
+    <a href="index.html" class="back-link">← Back to Hub</a>
+
+    <h1>🔴🟢 Simon Says</h1>
+    <p id="status">Press Start to begin</p>
+    <p id="round">Round: 0</p>
+
+    <div class="simon-board">
+      <div class="simon-btn" id="red" data-color="red"></div>
+      <div class="simon-btn" id="blue" data-color="blue"></div>
+      <div class="simon-btn" id="green" data-color="green"></div>
+      <div class="simon-btn" id="yellow" data-color="yellow"></div>
+    </div>
+
+    <button id="startBtn">▶️ Start Game</button>
+  </div>
+
+  <script src="simon.js"></script>
+</body>
+</html>

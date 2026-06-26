@@ -1,0 +1,42 @@
+.tetris-board {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+  gap: 1px;
+  width: 200px;
+  height: 400px;
+  margin: 24px auto;
+  background-color: #E8D6FF;
+  border-radius: 12px;
+  padding: 6px;
+}
+
+.cell {
+  background-color: #F8F2FF;
+  border-radius: 2px;
+}
+
+.cell.filled-I { background-color: #A8C8FF; }
+.cell.filled-O { background-color: #FFE08A; }
+.cell.filled-T { background-color: #E8D6FF; border: 1px solid #D6B8FF; }
+.cell.filled-L { background-color: #FFD6A8; }
+.cell.filled-J { background-color: #A8C8FF; }
+.cell.filled-S { background-color: #A8E8C4; }
+.cell.filled-Z { background-color: #FF9EC4; }
+
+#startBtn {
+  background-color: #FFD6E8;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+  color: #4A4063;
+}
+
+#startBtn:hover {
+  background-color: #FF9EC4;
+  color: white;
+}

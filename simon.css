@@ -1,0 +1,53 @@
+.simon-board {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  max-width: 280px;
+  margin: 24px auto;
+}
+
+.simon-btn {
+  height: 120px;
+  border-radius: 16px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.15s, transform 0.1s;
+}
+
+.simon-btn:hover {
+  opacity: 0.8;
+}
+
+.simon-btn.active {
+  opacity: 1;
+  transform: scale(0.95);
+}
+
+#red    { background-color: #FF9EC4; }
+#blue   { background-color: #A8C8FF; }
+#green  { background-color: #A8E8C4; }
+#yellow { background-color: #FFE08A; }
+
+#round {
+  color: #8A7FA0;
+  font-weight: 600;
+  margin-top: -16px;
+  margin-bottom: 8px;
+}
+
+#startBtn {
+  background-color: #FFD6E8;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+  color: #4A4063;
+}
+
+#startBtn:hover {
+  background-color: #FF9EC4;
+  color: white;
+}

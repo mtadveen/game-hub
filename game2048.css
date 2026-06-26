@@ -1,0 +1,54 @@
+.board-2048 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  max-width: 340px;
+  margin: 24px auto;
+  background-color: #E8D6FF;
+  padding: 10px;
+  border-radius: 16px;
+}
+
+.tile {
+  height: 72px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: 800;
+  font-family: 'Baloo 2', sans-serif;
+  color: #4A4063;
+  background-color: #F3EBFF;
+  transition: background-color 0.15s;
+}
+
+/* Different colors per tile value — helps visually track merges */
+.tile[data-value="2"]    { background-color: #FFF3C4; }
+.tile[data-value="4"]    { background-color: #FFE0C2; }
+.tile[data-value="8"]    { background-color: #FFD6E8; }
+.tile[data-value="16"]   { background-color: #FF9EC4; color: white; }
+.tile[data-value="32"]   { background-color: #D6E8FF; }
+.tile[data-value="64"]   { background-color: #A8C8FF; color: white; }
+.tile[data-value="128"]  { background-color: #D6F5E3; }
+.tile[data-value="256"]  { background-color: #A8E8C4; }
+.tile[data-value="512"]  { background-color: #B8A8FF; color: white; }
+.tile[data-value="1024"] { background-color: #8A7FA0; color: white; }
+.tile[data-value="2048"] { background-color: #4A4063; color: white; }
+
+#resetBtn {
+  background-color: #FFD6E8;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+  color: #4A4063;
+}
+
+#resetBtn:hover {
+  background-color: #FF9EC4;
+  color: white;
+}

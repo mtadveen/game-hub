@@ -1,0 +1,44 @@
+.snake-board {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+  gap: 1px;
+  width: 360px;
+  height: 360px;
+  margin: 24px auto;
+  background-color: #E8D6FF;
+  border-radius: 12px;
+  padding: 6px;
+}
+
+.cell {
+  background-color: #F8F2FF;
+  border-radius: 2px;
+}
+
+.cell.snake {
+  background-color: #A8E8C4;
+  border-radius: 4px;
+}
+
+.cell.food {
+  background-color: #FF9EC4;
+  border-radius: 50%;
+}
+
+#startBtn {
+  background-color: #FFD6E8;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+  color: #4A4063;
+}
+
+#startBtn:hover {
+  background-color: #FF9EC4;
+  color: white;
+}
